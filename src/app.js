@@ -19,7 +19,7 @@ export default class extends React.Component {
       f7params: {
         id: 'com.appmasknow',
         name: 'Masknow',
-        version: '1.0.0',
+        version: '1.1.0',
         theme: 'md',
         data,
         routes,
