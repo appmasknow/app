@@ -43,6 +43,16 @@
   <platform name="ios">
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+      <string>Precisa de acesso à câmera para tirar fotos</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+      <string>Precisa de acesso à biblioteca de fotos para tirar fotos de lá</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+      <string>Precisa de acesso à biblioteca de fotos para salvar as fotos</string>
+    </edit-config>
+    <preference name="CameraUsesGeolocation" value="false" />
     <!-- icon -->
     <!-- iOS 8.0+ -->
     <!-- iPhone 6 Plus  -->
