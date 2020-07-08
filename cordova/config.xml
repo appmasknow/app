@@ -43,6 +43,11 @@
   <platform name="ios">
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
+    <!-- cordova-plugin-geolocation -->
+    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+      <string>Precisa de acesso ao local para encontrar coisas nas proximidades</string>
+    </edit-config>
+    <!-- cordova-plugin-camera -->
     <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
       <string>Precisa de acesso à câmera para tirar fotos</string>
     </edit-config>
