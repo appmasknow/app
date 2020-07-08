@@ -8,7 +8,6 @@ export default () => {
     
     // cordova-plugin-splashscreen
     if (navigator) setTimeout(() => {
-      alert('PASSOU AQUI');
       navigator.splashscreen.hide();
     }, 2000);
   }
